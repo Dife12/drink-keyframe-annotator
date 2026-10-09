@@ -1,4 +1,4 @@
-"""喝水视频关键帧标注工具。"""
+"""视频关键帧标注工具"""
 
 from __future__ import annotations
 
@@ -264,7 +264,7 @@ class FrameGridView(QGraphicsView):
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("喝水视频关键帧标注工具")
+        self.setWindowTitle("视频关键帧标注工具")
         self.resize(1200, 760)
         self.image_paths: list[Path] = []
         self.current_image_index = -1
