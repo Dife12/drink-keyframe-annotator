@@ -1,3 +1,5 @@
+本文件由ai生成。
+
 # 自用视频关键帧标注工具
 
 一个轻量级的 Windows 桌面工具，用于标注已预处理为“每秒一张、每张含 30 帧拼图”的视频关键帧。
@@ -36,8 +38,8 @@ pip install -r requirements.txt
 3. 每张图是 5 列 × 6 行的 30 帧拼图。点击格子依次标注：
    - `pick start`：开始拿水杯
    - `drink start`：水杯开始遮住嘴
-   - `drink end`：水杯离开嘴、开始能看到嘴
-   - `pick end`：把水杯放回
+   - `drink end`：水杯离开嘴
+   - `pick end`：水杯放回
 4. 四次点击可跨不同图片完成。第四次完成后，下一次点击自动开始一条新记录。
 5. 使用左右方向键或“上一张 / 下一张”切换图片。表格正在编辑时，左右键优先用于编辑文字。`Ctrl+O` 可打开图片文件夹。
 6. 右侧表格可双击手动修改四个时间标记；格式为 `second,frame`，例如 `12,17`。`second` 须非负，`frame` 范围为 0–29。允许清空单元格。最后一列 `container type` 使用下拉框选择 `plastic bottle`、`paper cup small` 或 `paper cup large`（新行默认空白）；其修改不会影响四步点击或 Ctrl+Z。
